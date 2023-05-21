@@ -1,0 +1,170 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/dhh/repos?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.github+json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.github.com
+      Authorization:
+      - Bearer <BEARER_TOKEN>
+      X-Github-Api-Version:
+      - '2022-11-28'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 21 May 2023 00:38:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"ba4fbad17e7573835a5d37dd84eae28af9f2436cccee232283808f3b84ac5105"
+      Github-Authentication-Token-Expiration:
+      - '2023-06-19 20:04:25 -0300'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Github-Api-Version-Selected:
+      - '2022-11-28'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4991'
+      X-Ratelimit-Reset:
+      - '1684632064'
+      X-Ratelimit-Used:
+      - '9'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 4F4D:3E7F:24B8BF:28932A:6469681B
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":81754,"node_id":"MDEwOlJlcG9zaXRvcnk4MTc1NA==","name":"asset-hosting-with-minimum-ssl","full_name":"dhh/asset-hosting-with-minimum-ssl","private":false,"owner":{"login":"dhh","id":2741,"node_id":"MDQ6VXNlcjI3NDE=","avatar_url":"https://avatars.githubusercontent.com/u/2741?v=4","gravatar_id":"","url":"https://api.github.com/users/dhh","html_url":"https://github.com/dhh","followers_url":"https://api.github.com/users/dhh/followers","following_url":"https://api.github.com/users/dhh/following{/other_user}","gists_url":"https://api.github.com/users/dhh/gists{/gist_id}","starred_url":"https://api.github.com/users/dhh/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dhh/subscriptions","organizations_url":"https://api.github.com/users/dhh/orgs","repos_url":"https://api.github.com/users/dhh/repos","events_url":"https://api.github.com/users/dhh/events{/privacy}","received_events_url":"https://api.github.com/users/dhh/received_events","type":"User","site_admin":false},"html_url":"https://github.com/dhh/asset-hosting-with-minimum-ssl","description":"Rails
+        plugin for picking a non-ssl asset host as often as possible","fork":false,"url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl","forks_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/forks","keys_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/keys{/key_id}","collaborators_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/teams","hooks_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/hooks","issue_events_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/issues/events{/number}","events_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/events","assignees_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/assignees{/user}","branches_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/branches{/branch}","tags_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/tags","blobs_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/git/refs{/sha}","trees_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/git/trees{/sha}","statuses_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/statuses/{sha}","languages_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/languages","stargazers_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/stargazers","contributors_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/contributors","subscribers_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/subscribers","subscription_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/subscription","commits_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/commits{/sha}","git_commits_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/git/commits{/sha}","comments_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/comments{/number}","issue_comment_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/issues/comments{/number}","contents_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/contents/{+path}","compare_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/compare/{base}...{head}","merges_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/merges","archive_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/downloads","issues_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/issues{/number}","pulls_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/pulls{/number}","milestones_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/milestones{/number}","notifications_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/labels{/name}","releases_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/releases{/id}","deployments_url":"https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/deployments","created_at":"2008-11-27T16:21:03Z","updated_at":"2023-01-28T06:20:20Z","pushed_at":"2008-11-27T21:59:35Z","git_url":"git://github.com/dhh/asset-hosting-with-minimum-ssl.git","ssh_url":"git@github.com:dhh/asset-hosting-with-minimum-ssl.git","clone_url":"https://github.com/dhh/asset-hosting-with-minimum-ssl.git","svn_url":"https://github.com/dhh/asset-hosting-with-minimum-ssl","homepage":"","size":81,"stargazers_count":79,"watchers_count":79,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":14,"mirror_url":null,"archived":true,"disabled":false,"open_issues_count":0,"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","node_id":"MDc6TGljZW5zZTEz"},"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":14,"open_issues":0,"watchers":79,"default_branch":"master","permissions":{"admin":false,"maintain":false,"push":false,"triage":false,"pull":true}},{"id":79943,"node_id":"MDEwOlJlcG9zaXRvcnk3OTk0Mw==","name":"conductor","full_name":"dhh/conductor","private":false,"owner":{"login":"dhh","id":2741,"node_id":"MDQ6VXNlcjI3NDE=","avatar_url":"https://avatars.githubusercontent.com/u/2741?v=4","gravatar_id":"","url":"https://api.github.com/users/dhh","html_url":"https://github.com/dhh","followers_url":"https://api.github.com/users/dhh/followers","following_url":"https://api.github.com/users/dhh/following{/other_user}","gists_url":"https://api.github.com/users/dhh/gists{/gist_id}","starred_url":"https://api.github.com/users/dhh/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dhh/subscriptions","organizations_url":"https://api.github.com/users/dhh/orgs","repos_url":"https://api.github.com/users/dhh/repos","events_url":"https://api.github.com/users/dhh/events{/privacy}","received_events_url":"https://api.github.com/users/dhh/received_events","type":"User","site_admin":false},"html_url":"https://github.com/dhh/conductor","description":null,"fork":false,"url":"https://api.github.com/repos/dhh/conductor","forks_url":"https://api.github.com/repos/dhh/conductor/forks","keys_url":"https://api.github.com/repos/dhh/conductor/keys{/key_id}","collaborators_url":"https://api.github.com/repos/dhh/conductor/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/dhh/conductor/teams","hooks_url":"https://api.github.com/repos/dhh/conductor/hooks","issue_events_url":"https://api.github.com/repos/dhh/conductor/issues/events{/number}","events_url":"https://api.github.com/repos/dhh/conductor/events","assignees_url":"https://api.github.com/repos/dhh/conductor/assignees{/user}","branches_url":"https://api.github.com/repos/dhh/conductor/branches{/branch}","tags_url":"https://api.github.com/repos/dhh/conductor/tags","blobs_url":"https://api.github.com/repos/dhh/conductor/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/dhh/conductor/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/dhh/conductor/git/refs{/sha}","trees_url":"https://api.github.com/repos/dhh/conductor/git/trees{/sha}","statuses_url":"https://api.github.com/repos/dhh/conductor/statuses/{sha}","languages_url":"https://api.github.com/repos/dhh/conductor/languages","stargazers_url":"https://api.github.com/repos/dhh/conductor/stargazers","contributors_url":"https://api.github.com/repos/dhh/conductor/contributors","subscribers_url":"https://api.github.com/repos/dhh/conductor/subscribers","subscription_url":"https://api.github.com/repos/dhh/conductor/subscription","commits_url":"https://api.github.com/repos/dhh/conductor/commits{/sha}","git_commits_url":"https://api.github.com/repos/dhh/conductor/git/commits{/sha}","comments_url":"https://api.github.com/repos/dhh/conductor/comments{/number}","issue_comment_url":"https://api.github.com/repos/dhh/conductor/issues/comments{/number}","contents_url":"https://api.github.com/repos/dhh/conductor/contents/{+path}","compare_url":"https://api.github.com/repos/dhh/conductor/compare/{base}...{head}","merges_url":"https://api.github.com/repos/dhh/conductor/merges","archive_url":"https://api.github.com/repos/dhh/conductor/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/dhh/conductor/downloads","issues_url":"https://api.github.com/repos/dhh/conductor/issues{/number}","pulls_url":"https://api.github.com/repos/dhh/conductor/pulls{/number}","milestones_url":"https://api.github.com/repos/dhh/conductor/milestones{/number}","notifications_url":"https://api.github.com/repos/dhh/conductor/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/dhh/conductor/labels{/name}","releases_url":"https://api.github.com/repos/dhh/conductor/releases{/id}","deployments_url":"https://api.github.com/repos/dhh/conductor/deployments","created_at":"2008-11-23T20:40:27Z","updated_at":"2023-01-28T06:20:20Z","pushed_at":"2010-09-16T15:15:45Z","git_url":"git://github.com/dhh/conductor.git","ssh_url":"git@github.com:dhh/conductor.git","clone_url":"https://github.com/dhh/conductor.git","svn_url":"https://github.com/dhh/conductor","homepage":"","size":1463,"stargazers_count":65,"watchers_count":65,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":24,"mirror_url":null,"archived":true,"disabled":false,"open_issues_count":2,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":24,"open_issues":2,"watchers":65,"default_branch":"master","permissions":{"admin":false,"maintain":false,"push":false,"triage":false,"pull":true}},{"id":147432708,"node_id":"MDEwOlJlcG9zaXRvcnkxNDc0MzI3MDg=","name":"textmate-rails-bundle","full_name":"dhh/textmate-rails-bundle","private":false,"owner":{"login":"dhh","id":2741,"node_id":"MDQ6VXNlcjI3NDE=","avatar_url":"https://avatars.githubusercontent.com/u/2741?v=4","gravatar_id":"","url":"https://api.github.com/users/dhh","html_url":"https://github.com/dhh","followers_url":"https://api.github.com/users/dhh/followers","following_url":"https://api.github.com/users/dhh/following{/other_user}","gists_url":"https://api.github.com/users/dhh/gists{/gist_id}","starred_url":"https://api.github.com/users/dhh/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dhh/subscriptions","organizations_url":"https://api.github.com/users/dhh/orgs","repos_url":"https://api.github.com/users/dhh/repos","events_url":"https://api.github.com/users/dhh/events{/privacy}","received_events_url":"https://api.github.com/users/dhh/received_events","type":"User","site_admin":false},"html_url":"https://github.com/dhh/textmate-rails-bundle","description":"My
+        stripped down Rails bundle for TextMate 2","fork":false,"url":"https://api.github.com/repos/dhh/textmate-rails-bundle","forks_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/forks","keys_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/keys{/key_id}","collaborators_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/teams","hooks_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/hooks","issue_events_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/issues/events{/number}","events_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/events","assignees_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/assignees{/user}","branches_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/branches{/branch}","tags_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/tags","blobs_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/git/refs{/sha}","trees_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/git/trees{/sha}","statuses_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/statuses/{sha}","languages_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/languages","stargazers_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/stargazers","contributors_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/contributors","subscribers_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/subscribers","subscription_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/subscription","commits_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/commits{/sha}","git_commits_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/git/commits{/sha}","comments_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/comments{/number}","issue_comment_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/issues/comments{/number}","contents_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/contents/{+path}","compare_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/compare/{base}...{head}","merges_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/merges","archive_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/downloads","issues_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/issues{/number}","pulls_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/pulls{/number}","milestones_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/milestones{/number}","notifications_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/labels{/name}","releases_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/releases{/id}","deployments_url":"https://api.github.com/repos/dhh/textmate-rails-bundle/deployments","created_at":"2018-09-04T23:34:23Z","updated_at":"2023-05-15T07:38:39Z","pushed_at":"2022-06-18T10:14:16Z","git_url":"git://github.com/dhh/textmate-rails-bundle.git","ssh_url":"git@github.com:dhh/textmate-rails-bundle.git","clone_url":"https://github.com/dhh/textmate-rails-bundle.git","svn_url":"https://github.com/dhh/textmate-rails-bundle","homepage":null,"size":31,"stargazers_count":36,"watchers_count":36,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":10,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":1,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":10,"open_issues":1,"watchers":36,"default_branch":"master","permissions":{"admin":false,"maintain":false,"push":false,"triage":false,"pull":true}}]'
+  recorded_at: Sun, 21 May 2023 00:38:51 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/dhh/repos?page=2&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.github+json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.github.com
+      Authorization:
+      - Bearer <BEARER_TOKEN>
+      X-Github-Api-Version:
+      - '2022-11-28'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 21 May 2023 00:38:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - '"754abbf94e846c46b10d5b308f928f158961d59239d55da561124c376edffa8e"'
+      Github-Authentication-Token-Expiration:
+      - '2023-06-19 20:04:25 -0300'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Link:
+      - <https://api.github.com/user/2741/repos?per_page=100&page=1>; rel="prev",
+        <https://api.github.com/user/2741/repos?per_page=100&page=1>; rel="last",
+        <https://api.github.com/user/2741/repos?per_page=100&page=1>; rel="first"
+      X-Github-Api-Version-Selected:
+      - '2022-11-28'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4990'
+      X-Ratelimit-Reset:
+      - '1684632064'
+      X-Ratelimit-Used:
+      - '10'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 4F4E:0DE6:1EA6FFC:20CA870:6469681C
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 21 May 2023 00:38:52 GMT
+recorded_with: VCR 6.1.0
